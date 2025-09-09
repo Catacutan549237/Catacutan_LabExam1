@@ -55,7 +55,6 @@ $students = $records->readAll();
     <table>
         <thead>
             <tr>
-                <th>ID</th>
                 <th>ID Number</th>
                 <th>Name</th>
                 <th>Email</th>
@@ -66,7 +65,6 @@ $students = $records->readAll();
         <tbody>
             <?php foreach ($students as $student): ?>
             <tr>
-                <td><?=$student['id']; ?></td>
                 <td><?=$student['id_number']; ?></td>
                 <td><?=$student['name']; ?></td>
                 <td><?=$student['email']; ?></td>
@@ -80,4 +78,5 @@ $students = $records->readAll();
         </tbody>
     </table>
 </body>
+
 </html>
