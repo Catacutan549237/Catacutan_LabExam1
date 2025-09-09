@@ -28,7 +28,7 @@ class Student_Records {
 
 
     public function readAll() {
-        $sql = "SELECT * FROM $this->table";
+        $sql = "SELECT id_number, name, email, course FROM $this->table";
         $stmt = $this->conn->query($sql);
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
@@ -58,4 +58,5 @@ class Student_Records {
         return $stmt->execute(["id" => $id]);
     }
 }
+
 ?>
